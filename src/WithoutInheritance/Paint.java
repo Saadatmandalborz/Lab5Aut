@@ -7,6 +7,12 @@ public class Paint {
     private ArrayList<Circle> circles;
     private ArrayList<Rectangle> rectangles;
 
+    public Paint() {
+        triangles = new ArrayList<>();
+        rectangles = new ArrayList<>();
+        circles = new ArrayList<>();
+    }
+
     public void addTriangle(Triangle triangle){
         triangles.add(triangle);
     }

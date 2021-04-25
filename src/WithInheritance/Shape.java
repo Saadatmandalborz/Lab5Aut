@@ -1,6 +1,11 @@
 package WithInheritance;
 
 public abstract class Shape {
-    private String name;
+    String name;
+
+    public Shape(String name) {
+        this.name = name;
+    }
+
     public abstract void draw();
 }

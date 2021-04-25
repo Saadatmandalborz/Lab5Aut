@@ -1,9 +1,18 @@
 package WithInheritance;
 
-public class Polygon extends Shape{
+public abstract class Polygon extends Shape{
+    int [] slides;
 
-    @Override
+    public Polygon(String name,int[]slides) {
+        super(name);
+        this.slides = slides;
+    }
+
     public void draw() {
-
+        System.out.print(name+": ");
+        for (int slide : slides) {
+            System.out.print(slide + " ");
+        }
+        System.out.println();
     }
 }
