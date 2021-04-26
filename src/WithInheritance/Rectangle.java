@@ -18,4 +18,12 @@ public class Rectangle extends Polygon{
                 "slides=" + Arrays.toString(slides) +
                 " | Square: " + isSquare() + "}";
     }
+
+    @Override
+    public double getArea() {
+        if(slides[0] != slides[1])
+            return slides[0] * slides[1];
+        else
+            return slides[0] * slides[2];
+    }
 }

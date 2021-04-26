@@ -15,4 +15,14 @@ public abstract class Polygon extends Shape{
         }
         System.out.println();
     }
+
+    @Override
+    public double getPerimeter() {
+        double perimeter = 0;
+        for(int slide : slides)
+        {
+            perimeter += slide;
+        }
+        return perimeter;
+    }
 }

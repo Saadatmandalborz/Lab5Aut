@@ -19,4 +19,9 @@ public class Triangle extends Polygon{
                 "slides=" + Arrays.toString(slides) +
                 " | Equilateral: " + isEquilateral() + "}";
     }
+
+    @Override
+    public double getArea() {
+        return (double)(slides[0] + slides[1] + slides[2])/2;
+    }
 }
